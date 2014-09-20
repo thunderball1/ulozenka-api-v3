@@ -9,7 +9,7 @@ namespace Ulozenka\APIv3;
  */
 class ConsignmentRequest {
 
-    /** @var int */
+    /** @var integer */
     private $shopId;
 
     /** @var string */
@@ -18,13 +18,13 @@ class ConsignmentRequest {
     /** @var Recipient */
     private $recipient;
 
-    /** @var int */
+    /** @var integer */
     private $transportServiceId;
 
-    /** @var int */
+    /** @var integer */
     private $registerBranchId;
 
-    /** @var int */
+    /** @var integer */
     private $destinationBranchId;
 
     /** @var string */
@@ -33,7 +33,7 @@ class ConsignmentRequest {
     /** @var string */
     private $partnerConsignmentId;
 
-    /** @var int */
+    /** @var integer */
     private $parcelCount;
 
     /** @var double */
@@ -49,9 +49,9 @@ class ConsignmentRequest {
     private $statedPrice;
 
     /** @var string */
-    private $currbooleanency;
+    private $currency;
 
-    /** @var int */
+    /** @var integer */
     private $valiable;
 
     /** @var string */
@@ -69,10 +69,10 @@ class ConsignmentRequest {
 
     /**
      * 
-     * @param int $shopId
+     * @param integer $shopId
      * @param string $apiKey
      */
-    function __construct(int $shopId, string $apiKey) {
+    function __construct(integer $shopId, string $apiKey) {
         $this->shopId = $shopId;
         $this->apiKey = $apiKey;
     }
@@ -121,8 +121,8 @@ class ConsignmentRequest {
         return $this->statedPrice;
     }
 
-    function getCurrbooleanency() {
-        return $this->currbooleanency;
+    function getCurrency() {
+        return $this->currency;
     }
 
     function getValiable() {
@@ -193,8 +193,8 @@ class ConsignmentRequest {
         $this->statedPrice = $statedPrice;
     }
 
-    function setCurrbooleanency($currbooleanency) {
-        $this->currbooleanency = $currbooleanency;
+    function setCurrency($currency) {
+        $this->currency = $currency;
     }
 
     function setValiable($valiable) {

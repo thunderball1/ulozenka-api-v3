@@ -3,7 +3,7 @@
 	"description": "Uloženka API v3 communication",
 	"authors": [
 		{
-			"name": "Petr Vácha",
+			"name": "Petr Vácha"
 		}
 	],
 	"require": {

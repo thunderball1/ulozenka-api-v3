@@ -1,7 +1,7 @@
 {
 	"name": "ulozenka/api-v3",
 	"description": "Uloženka API v3 communication",
-	"license": {"MIT}
+	"license": ["MIT"],
 	"authors": [
 		{
 			"name": "Petr Vácha"

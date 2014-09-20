@@ -72,7 +72,7 @@ class ConsignmentRequest {
      * @param integer $shopId
      * @param string $apiKey
      */
-    function __construct(integer $shopId, string $apiKey) {
+    function __construct($shopId, $apiKey) {
         $this->shopId = $shopId;
         $this->apiKey = $apiKey;
     }

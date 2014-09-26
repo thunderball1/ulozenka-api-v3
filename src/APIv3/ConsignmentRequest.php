@@ -65,16 +65,17 @@ class ConsignmentRequest {
 
     /** @var string */
     private $note;
-    private $labels;
+
+    /** @var LabelsRequest */
+    private $labelsRequest;
 
     /**
      * 
      * @param integer $shopId
      * @param string $apiKey
      */
-    function __construct($shopId, $apiKey) {
-        $this->shopId = $shopId;
-        $this->apiKey = $apiKey;
+    function __construct() {
+        
     }
 
     function getRecipient() {
@@ -145,8 +146,12 @@ class ConsignmentRequest {
         return $this->note;
     }
 
-    function getLabels() {
-        return $this->labels;
+    function getLabelsRequest() {
+        return $this->labelsRequest;
+    }
+
+    function setLabelsRequest(LabelsRequest $labelsRequest) {
+        $this->labelsRequest = $labelsRequest;
     }
 
     function setRecipient(Recipient $recipient) {
@@ -215,14 +220,6 @@ class ConsignmentRequest {
 
     function setNote($note) {
         $this->note = $note;
-    }
-
-    function setLabels($labels) {
-        $this->labels = $labels;
-    }
-
-    function send() {
-        
     }
 
 }

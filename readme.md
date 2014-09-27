@@ -1,2 +1,2 @@
-Uloženka API v3 communication
+Uloženka Api v3 communication
 ==============
